@@ -1,20 +1,20 @@
 .bjs-container {
   --bjs-font-family: Arial, sans-serif;
 
-  --color-grey-225-10-15: hsl(0, 100%, 50%);
-  --color-grey-225-10-35: hsl(0, 100%, 50%);
-  --color-grey-225-10-55: hsl(0, 100%, 50%);
-  --color-grey-225-10-75: hsl(0, 100%, 50%);
-  --color-grey-225-10-80: hsl(0, 100%, 50%);
-  --color-grey-225-10-85: hsl(0, 100%, 50%);
-  --color-grey-225-10-90: hsl(0, 100%, 50%);
-  --color-grey-225-10-95: hsl(0, 100%, 50%);
-  --color-grey-225-10-97: hsl(0, 100%, 50%);
+  --color-grey-225-10-15: hsl(225, 10%, 15%);
+  --color-grey-225-10-35: hsl(225, 10%, 35%);
+  --color-grey-225-10-55: hsl(225, 10%, 55%);
+  --color-grey-225-10-75: hsl(225, 10%, 75%);
+  --color-grey-225-10-80: hsl(225, 10%, 80%);
+  --color-grey-225-10-85: hsl(225, 10%, 85%);
+  --color-grey-225-10-90: hsl(225, 10%, 90%);
+  --color-grey-225-10-95: hsl(225, 10%, 95%);
+  --color-grey-225-10-97: hsl(225, 10%, 97%);
 
-  --color-blue-205-100-45: hsl(0, 100%, 50%);
-  --color-blue-205-100-45-opacity-30: hsl(0, 100%, 50%);
-  --color-blue-205-100-50: hsl(0, 100%, 50%);
-  --color-blue-205-100-95: hsl(0, 100%, 50%);
+  --color-blue-205-100-45: hsl(205, 100%, 45%);
+  --color-blue-205-100-45-opacity-30: hsla(205, 100%, 45%, 30%);
+  --color-blue-205-100-50: hsl(205, 100%, 50%);
+  --color-blue-205-100-95: hsl(205, 100%, 95%);
 
   --color-green-150-86-44: hsl(150, 86%, 44%);
 
