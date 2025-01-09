@@ -6,6 +6,73 @@ All notable changes to [bpmn-js](https://github.com/bpmn-io/bpmn-js) are documen
 
 ___Note:__ Yet to be released changes appear here._
 
+## 18.1.2
+
+* `FIX`: canvas `autoFocus` must explicitly be enabled ([bpmn-io/diagram-js#956](https://github.com/bpmn-io/diagram-js/pull/956))
+* `FIX`: properly integrate `zoomscroll` with canvas focus ([bpmn-io/diagram-js#956](https://github.com/bpmn-io/diagram-js/pull/956))
+* `FIX`: properly integrate `movecanvas` with canvas focus ([bpmn-io/diagram-js#956](https://github.com/bpmn-io/diagram-js/pull/956))
+
+## 18.1.1
+
+* `FIX`: adjust search to prioritize start of word and exact matches ([bpmn-io/diagram-js#953](https://github.com/bpmn-io/diagram-js/pull/953))
+* `FIX`: ignore whitespace when searching ([bpmn-io/diagram-js#954](https://github.com/bpmn-io/diagram-js/pull/954))
+
+## 18.1.0
+
+* `FIX`: clear selection when opening search pad ([bpmn-io/diagram-js#947](https://github.com/bpmn-io/diagram-js/pull/947))
+* `FIX`: correct dangling selection after search pad interaction ([bpmn-io/diagram-js#947](https://github.com/bpmn-io/diagram-js/pull/947))
+* `DEPS`: update to `diagram-js@15.2.2`
+
+## 18.0.0
+
+* `FEAT`: remove `outline` from `Viewer` modules ([#2135](https://github.com/bpmn-io/bpmn-js/issues/2135))
+* `FEAT`: make `Canvas` a focusable element ([bpmn-io/diagram-js#662](https://github.com/bpmn-io/diagram-js/pull/662))
+* `FEAT`: implicit keyboard binding ([bpmn-io/diagram-js#662](https://github.com/bpmn-io/diagram-js/pull/662))
+* `FEAT`: integrate with global `search` ([#2235](https://github.com/bpmn-io/bpmn-js/pull/2235))
+* `FEAT`: integrate `popup-menu` with `search` ([bpmn-io/diagram-js#932](https://github.com/bpmn-io/diagram-js/pull/932))
+* `FEAT`: recognize modern `search` tokens in `search-pad` ([bpmn-io/diagram-js#932](https://github.com/bpmn-io/diagram-js/pull/932))
+* `FIX`: correctly handle duplicate entries and whitespace in `search` ([bpmn-io/diagram-js#932](https://github.com/bpmn-io/diagram-js/pull/932))
+* `FIX`: find `search` terms across all keys ([bpmn-io/diagram-js#932](https://github.com/bpmn-io/diagram-js/pull/932))
+* `FIX`: `search` always returns tokens for matched items ([bpmn-io/diagram-js#932](https://github.com/bpmn-io/diagram-js/pull/932))
+* `FIX`: prevent crash during label adjustment ([#2239](https://github.com/bpmn-io/bpmn-js/issues/2239))
+* `FIX`: keep existing loop characteristics when toggling through the replace menu ([#2251](https://github.com/bpmn-io/bpmn-js/pull/2251))
+* `FIX`: prevent covering multi selection with black box in `Viewer` ([#2135](https://github.com/bpmn-io/bpmn-js/issues/2135))
+* `FIX`: generate types for main entry ([`986e2bb`](https://github.com/bpmn-io/bpmn-js/commit/986e2bb51ea301e6e0df56f3606a27424fb90179))
+* `FIX`: correct handling of group name with whitespace only ([#2231](https://github.com/bpmn-io/bpmn-js/issues/2231))
+* `DEPS`: update to `bpmn-moddle@9` ([#2114](https://github.com/bpmn-io/bpmn-js/pull/2114))
+* `DEPS`: update to `diagram-js@15.1.0`
+* `DEPS`: update to `diagram-js-direct-editing@3.2.0`
+
+### Breaking Changes
+
+* Require `Node >= 20`
+* `Canvas` is now a focusable element and provides better support for native browser behaviors. Focus can be controlled with new `focus` and `restoreFocus` APIs ([bpmn-io/diagram-js#662](https://github.com/bpmn-io/diagram-js/pull/662)).
+* Keyboard is now implicitly bound to canvas SVG element. Calls to `keyboard.bind` and `keyboard.bindTo` now result with a descriptive console error and have no effect ([bpmn-io/diagram-js#662](https://github.com/bpmn-io/diagram-js/pull/662)).
+
+## 17.11.1
+
+* `FIX`: handle searching elements without labels ([#2232](https://github.com/bpmn-io/bpmn-js/issues/2232), [#2234](https://github.com/bpmn-io/bpmn-js/pull/2234))
+
+## 17.11.0
+
+* `FEAT`: align search styles with other popups ([#2187](https://github.com/bpmn-io/bpmn-js/pull/2187))
+* `FEAT`: prioritize start of tokens in search results ([#2187](https://github.com/bpmn-io/bpmn-js/pull/2187))
+* `FIX`: do not commit viewport changes on `ESC` ([#2189](https://github.com/bpmn-io/bpmn-js/issues/2189), [#2187](https://github.com/bpmn-io/bpmn-js/pull/2187))
+* `DEPS`: update to `diagram-js@14.10.0`
+
+## 17.10.0
+
+* `CHORE`: correct various type hints ([#2228](https://github.com/bpmn-io/bpmn-js/issues/2228))
+* `FIX`: pasting compensation activity without boundary event ([#2070](https://github.com/bpmn-io/bpmn-js/issues/2070))
+* `FIX`: lane resize constraints for se and nw direction ([#2209](https://github.com/bpmn-io/bpmn-js/issues/2209))
+* `FIX`: auto place elements vertically in sub-processes ([#2127](https://github.com/bpmn-io/bpmn-js/issues/2127))
+* `FIX`: hide lane label during direct editing
+* `DEPS`: update to `diagram-js@14.9.0`
+
+## 17.9.2
+
+* `FIX`: keep direction when collapsing pools ([#2208](https://github.com/bpmn-io/bpmn-js/issues/2208))
+
 ## 17.9.1
 
 * `FIX`: show delete action for labels ([#2163](https://github.com/bpmn-io/bpmn-js/issues/2163))

@@ -48,9 +48,6 @@ describe('Modeler', function() {
 
     modeler = new Modeler({
       container: container,
-      keyboard: {
-        bindTo: document
-      }
     });
 
     setBpmnJS(modeler);
@@ -215,6 +212,19 @@ describe('Modeler', function() {
 
     });
 
+  });
+
+
+  it('should include Outline module by default', function() {
+
+    // given
+    var modeler = new Modeler();
+
+    // when
+    var outline = modeler.get('outline', false);
+
+    // then
+    expect(outline).to.exist;
   });
 
 
